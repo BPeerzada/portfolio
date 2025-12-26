@@ -26,10 +26,26 @@ export default function Home() {
                     <h1 className="text-5xl sm:text-7xl font-bold tracking-tight text-neutral-900 dark:text-white mb-8">
                         Play<span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-500">Portal</span>
                     </h1>
-                    <p className="text-xl text-neutral-600 dark:text-neutral-400 mb-10 leading-relaxed max-w-2xl">
+                    <p className="text-xl text-neutral-600 dark:text-neutral-400 mb-6 leading-relaxed max-w-2xl">
                         Interactive data analytics projects you can explore.
                         Run code, query databases, and visualize insights — all in your browser.
                     </p>
+                    <div className="flex flex-wrap gap-4">
+                        <a
+                            href="/portfolio/resume.pdf"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-2 px-6 py-3 bg-neutral-900 dark:bg-white text-white dark:text-neutral-900 rounded-full font-semibold hover:bg-neutral-700 dark:hover:bg-neutral-200 transition-colors"
+                        >
+                            📄 View Resume
+                        </a>
+                        <Link
+                            href="/about"
+                            className="inline-flex items-center gap-2 px-6 py-3 border border-neutral-300 dark:border-neutral-700 rounded-full font-semibold text-neutral-700 dark:text-neutral-300 hover:bg-neutral-100 dark:hover:bg-neutral-800 transition-colors"
+                        >
+                            About Me →
+                        </Link>
+                    </div>
                 </div>
             </section>
 
