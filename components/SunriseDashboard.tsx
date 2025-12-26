@@ -49,13 +49,13 @@ const billingData = [
     { name: "Outstanding", value: 748000 },
 ];
 
-// Chart 4: Top Doctors Workload
+// Chart 4: Top Doctors Workload (from report: 120-112 for top group)
 const doctorWorkload = [
-    { name: "Dr. Martin", scheduled: 65, completed: 55 },
-    { name: "Dr. Chang", scheduled: 58, completed: 54 },
-    { name: "Dr. Khan", scheduled: 60, completed: 52 },
-    { name: "Dr. Patel", scheduled: 55, completed: 50 },
-    { name: "Dr. Wilson", scheduled: 52, completed: 48 },
+    { name: "Dr. Martin", scheduled: 68, completed: 52 },
+    { name: "Dr. Chang", scheduled: 64, completed: 50 },
+    { name: "Dr. Khan", scheduled: 62, completed: 48 },
+    { name: "Dr. Patel", scheduled: 60, completed: 46 },
+    { name: "Dr. Wilson", scheduled: 58, completed: 44 },
 ];
 
 // Chart 5: Diagnosis Distribution

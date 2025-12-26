@@ -24,14 +24,11 @@ export default function Home() {
             <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
                 <div className="max-w-3xl">
                     <h1 className="text-5xl sm:text-7xl font-bold tracking-tight text-neutral-900 dark:text-white mb-8">
-                        Data Analytics <br />
-                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-500">
-                            Playground
-                        </span>
+                        Play<span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-500">Portal</span>
                     </h1>
                     <p className="text-xl text-neutral-600 dark:text-neutral-400 mb-10 leading-relaxed max-w-2xl">
-                        A modular portfolio exploring complex data problems.
-                        Dive into interactive notebooks, SQL labs, and live dashboards directly in your browser.
+                        Interactive data analytics projects you can explore.
+                        Run code, query databases, and visualize insights — all in your browser.
                     </p>
                 </div>
             </section>
