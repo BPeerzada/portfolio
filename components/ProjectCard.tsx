@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Project } from "@/types/project";
 import { ArrowRight, Calendar } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { TechIconRow } from "./TechIcon";
 
 interface ProjectCardProps {
     project: Project;
@@ -19,10 +20,8 @@ export function ProjectCard({ project, className }: ProjectCardProps) {
         >
             <div className="flex flex-col h-full">
                 <div className="mb-4">
-                    <div className="flex items-center justify-between mb-2">
-                        <span className="text-xs font-medium text-blue-600 dark:text-blue-400 uppercase tracking-wider">
-                            {project.tags[0] || "Project"}
-                        </span>
+                    <div className="flex items-center justify-between mb-3">
+                        <TechIconRow tags={project.tags.slice(0, 4)} />
                         <div className="flex items-center text-neutral-500 text-xs">
                             <Calendar className="w-3 h-3 mr-1" />
                             {new Date(project.date).toLocaleDateString()}

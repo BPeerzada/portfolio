@@ -215,47 +215,21 @@ UNION ALL SELECT 'Billing', COUNT(*) FROM Billing;`}
                         Python Data Generation
                     </h2>
 
-                    <div className="bg-neutral-900 rounded-2xl p-6 overflow-x-auto">
-                        <pre className="text-sm text-neutral-300">
-                            <code>{`import csv
-import random
-import datetime
-
-# Target counts
-ADD_DOCTORS = 80
-ADD_PATIENTS = 1450
-ADD_APPOINTMENTS = 19900
-
-status_values = ["Scheduled", "Completed", "No-Show", "Cancelled"]
-sex_values = ["M", "F"]
-
-# Generate Appointments
-appointment_records = []
-for i in range(ADD_APPOINTMENTS):
-    apmt_id = 101 + i
-    status = random.choice(status_values)
-    
-    if status == "Completed":
-        duration = random.randint(15, 90)
-    else:
-        duration = None
-    
-    start_time = datetime.datetime(
-        random.randint(2023, 2025),
-        random.randint(1, 12),
-        random.randint(1, 28),
-        random.randint(8, 17),
-        random.choice([0, 30])
-    )
-    
-    appointment_records.append((
-        apmt_id, start_time, status, duration,
-        random.randint(1, ADD_PATIENTS),
-        random.randint(1, ADD_DOCTORS)
-    ))
-
-print(f"✅ Generated {len(appointment_records)} appointments")`}</code>
-                        </pre>
+                    <div className="bg-neutral-100 dark:bg-neutral-800 p-4 rounded-2xl mb-4">
+                        <p className="text-sm text-neutral-600 dark:text-neutral-400 mb-2">
+                            <strong>▶️ Try it yourself!</strong> Click "Run" to generate synthetic hospital data. The code creates CSV files for Doctors, Patients, Appointments, and Billing.
+                        </p>
+                    </div>
+                    <div className="rounded-2xl overflow-hidden border border-neutral-200 dark:border-neutral-800">
+                        <iframe
+                            src="https://trinket.io/embed/python3/b91dfff67063?showInstructions=true"
+                            width="100%"
+                            height="500"
+                            frameBorder="0"
+                            style={{ background: "#1e1e1e" }}
+                            title="Hospital Data Generator - Python"
+                            allowFullScreen
+                        />
                     </div>
                     <p className="text-sm text-neutral-500 mt-4">
                         This script generates ~20,000 appointment records with realistic status distributions and timestamps.
