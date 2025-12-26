@@ -228,7 +228,8 @@ UNION ALL SELECT 'Billing', COUNT(*) FROM Billing;`}
                             frameBorder="0"
                             style={{ background: "#1e1e1e" }}
                             title="Hospital Data Generator - Python"
-                            allowFullScreen
+                            loading="lazy"
+                            tabIndex={-1}
                         />
                     </div>
                     <p className="text-sm text-neutral-500 mt-4">
@@ -253,9 +254,10 @@ UNION ALL SELECT 'Billing', COUNT(*) FROM Billing;`}
                             width="100%"
                             height="800"
                             frameBorder="0"
-                            allowFullScreen
                             title="Sunshine Hospital Performance Dashboard"
                             className="bg-white"
+                            loading="lazy"
+                            tabIndex={-1}
                         />
                     </div>
 
