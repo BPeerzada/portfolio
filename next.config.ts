@@ -6,7 +6,7 @@ const nextConfig: NextConfig = {
     unoptimized: true, // <=== Required for static export
   },
   // Optional: Change this if keeping the site in a subdirectory (e.g. /portfolio)
-  // basePath: "/portfolio", 
+  basePath: "/portfolio",
 };
 
 export default nextConfig;
