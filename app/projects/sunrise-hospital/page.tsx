@@ -222,7 +222,7 @@ UNION ALL SELECT 'Billing', COUNT(*) FROM Billing;`}
                     </div>
                     <div className="rounded-2xl overflow-hidden border border-neutral-200 dark:border-neutral-800">
                         <iframe
-                            src="https://trinket.io/embed/python3/b91dfff67063?showInstructions=true"
+                            src="https://trinket.io/embed/python3/b91dfff67063"
                             width="100%"
                             height="500"
                             frameBorder="0"
@@ -240,19 +240,31 @@ UNION ALL SELECT 'Billing', COUNT(*) FROM Billing;`}
                 <section id="dashboard">
                     <h2 className="text-3xl font-bold text-neutral-900 dark:text-white mb-8 flex items-center gap-3">
                         <BarChart3 className="w-8 h-8 text-blue-500" />
-                        Interactive Dashboard
+                        Interactive Tableau Dashboard
                     </h2>
                     <p className="text-neutral-600 dark:text-neutral-400 mb-8">
-                        These charts recreate the Tableau dashboard insights using real aggregate data from the project.
+                        Explore the live dashboard below — filter by department, diagnosis, or status. This is the actual Tableau visualization published to Tableau Public.
                     </p>
 
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-                        <MonthlyAppointmentsChart />
-                        <NoShowRateChart />
-                        <BillingPerformanceChart />
-                        <DoctorWorkloadChart />
-                        <DiagnosisDistributionChart />
-                        <DepartmentPerformanceChart />
+                    {/* Live Tableau Embed */}
+                    <div className="rounded-2xl overflow-hidden border border-neutral-200 dark:border-neutral-800 bg-white mb-8">
+                        <iframe
+                            src="https://public.tableau.com/views/testtabbook/SunshineHospitalDB?:embed=y&:display_count=yes&:showVizHome=no"
+                            width="100%"
+                            height="800"
+                            frameBorder="0"
+                            allowFullScreen
+                            title="Sunshine Hospital Performance Dashboard"
+                            className="bg-white"
+                        />
+                    </div>
+
+                    {/* Summary Stats */}
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+                        <StatCard label="Total Appointments" value="20,000" />
+                        <StatCard label="Collection Rate" value="49.83%" />
+                        <StatCard label="Revenue" value="$1.49M" />
+                        <StatCard label="Outstanding" value="$748K" />
                     </div>
                 </section>
 
@@ -315,6 +327,15 @@ function FindingCard({ number, title, description }: { number: number; title: st
                     <p className="text-sm text-neutral-600 dark:text-neutral-400">{description}</p>
                 </div>
             </div>
+        </div>
+    );
+}
+
+function StatCard({ label, value }: { label: string; value: string }) {
+    return (
+        <div className="bg-white dark:bg-neutral-900 p-4 rounded-xl border border-neutral-200 dark:border-neutral-800 text-center">
+            <p className="text-2xl font-bold text-neutral-900 dark:text-white">{value}</p>
+            <p className="text-sm text-neutral-500">{label}</p>
         </div>
     );
 }
