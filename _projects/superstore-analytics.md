@@ -1,8 +1,8 @@
 ---
-title: "Superstore Data Analytics Project"
-description: "Processed a 300K+ row retail dataset to derive revenue trends and customer profitability insights using Tableau and Python."
+title: "Retail Performance Analytics"
+description: "Strategic insights into sales, profit, and customer behavior to identify key revenue drivers and operational inefficiencies."
 date: "2025-01-15"
-tags: ["Tableau", "Scenario Modeling", "Retail Analytics"]
+tags: ["Business Analytics", "Tableau", "Python", "Predictive Modeling"]
 embedUrl: "https://public.tableau.com/views/SuperstoreAnalytics/Dashboard1"
 ---
 

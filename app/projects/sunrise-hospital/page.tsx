@@ -217,7 +217,7 @@ UNION ALL SELECT 'Billing', COUNT(*) FROM Billing;`}
 
                     <div className="bg-neutral-100 dark:bg-neutral-800 p-4 rounded-2xl mb-4">
                         <p className="text-sm text-neutral-600 dark:text-neutral-400 mb-2">
-                            <strong>▶️ Try it yourself!</strong> Click "Run" to generate synthetic hospital data. The code creates CSV files for Doctors, Patients, Appointments, and Billing.
+                            <strong>▶️ Try it yourself!</strong> Click &quot;Run&quot; to generate synthetic hospital data. The code creates CSV files for Doctors, Patients, Appointments, and Billing.
                         </p>
                     </div>
                     <div className="rounded-2xl overflow-hidden border border-neutral-200 dark:border-neutral-800">
